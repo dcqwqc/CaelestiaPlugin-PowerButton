@@ -1,10 +1,10 @@
 {
   "name": "PowerButton",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "dcqwqc",
   "homepage": "https://github.com/dcqwqc/CaelestiaPlugin-PowerButton",
   "icon": "power_settings_new",
-  "description": "Repurpose the physical power button with configurable tap, double-tap, continuous hold, click-then-hold and very-long-hold actions while preventing accidental suspend.",
+  "description": "Safely repurpose Mirai\u2019s ACPI power button with reliable configurable single/double press actions while preventing accidental suspend; hold gestures are intentionally disabled because the hardware exposes no press duration to Linux.",
   "entryPoints": [
     {
       "type": "custom",

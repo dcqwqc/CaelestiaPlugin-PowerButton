@@ -6,9 +6,6 @@ A configurable Caelestia plugin for Mirai-style convertible laptops that turns t
 
 - single press: volume up
 - double press: volume down
-- press and hold: continuously raise volume
-- short click, then hold the second press: continuously lower volume
-- hold for 6 seconds: stop the ramp and turn the display off
 
 The defaults can be changed in Nexus → Plugins. Every gesture is configurable. Available mappings include disabled, volume up/down, mute, brightness up/down, media play/pause/next/previous, lock, and display off. The first hold and click-then-hold mappings are separate. Repeat start delay, repeat interval, tap step sizes, held step sizes, double-click timing, and the six-second safety action are configurable.
 
@@ -22,7 +19,9 @@ The user must have read access to the relevant `/dev/input/event*` device. On Mi
 
 ## Gesture semantics
 
-A single press is delayed only until the configured double-click window expires. A valid double press cancels the pending single action. Holding the first press starts its hold mapping after a short delay and repeats repeatable actions until release. A short click followed by a held second press uses the separate click-then-hold mapping. At the configured very-long-hold threshold (six seconds by default), repeating stops and the safety action fires once. Releasing after either hold mode never leaks a single/double action. Kernel repeat events are ignored.
+Mirai exposes its physical side power button through the ACPI `PNP0C0C` button driver. That kernel driver emits an instantaneous press+release pair for each ACPI notification, so userspace does not receive the physical hold duration. Because of that, this plugin intentionally supports edge gestures (single/double press) only on Mirai instead of pretending that hold/release is measurable.
+
+The laptop firmware can still enforce its own very-long physical hold behavior independently of Linux.
 
 ## Install
 
