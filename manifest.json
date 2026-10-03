@@ -1,10 +1,15 @@
 {
   "name": "PowerButton",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "dcqwqc",
   "homepage": "https://github.com/dcqwqc/CaelestiaPlugin-PowerButton",
   "icon": "power_settings_new",
-  "description": "Safely repurpose the physical power button with configurable single, double and long-press actions while preventing accidental suspend.",
-  "entryPoints": [{"type":"custom","source":"Main.qml"}],
+  "description": "Repurpose the physical power button with configurable tap, double-tap, continuous hold, click-then-hold and very-long-hold actions while preventing accidental suspend.",
+  "entryPoints": [
+    {
+      "type": "custom",
+      "source": "Main.qml"
+    }
+  ],
   "settings": "Settings.qml"
 }
