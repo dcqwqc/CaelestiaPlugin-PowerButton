@@ -62,7 +62,7 @@ class PowerDevice:
 
 def parse_args():
     p=argparse.ArgumentParser()
-    p.add_argument('--single',default='volume-up'); p.add_argument('--double',default='volume-down')
+    p.add_argument('--single',default='volume-down'); p.add_argument('--double',default='volume-up')
     p.add_argument('--double-ms',type=int,default=350); p.add_argument('--volume-step',type=int,default=5); p.add_argument('--brightness-step',type=int,default=5)
     p.add_argument('--probe',action='store_true')
     return p.parse_args()

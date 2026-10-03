@@ -7,11 +7,11 @@ SettingsObject {
     property bool enabled: true
     SettingMeta on enabled { label: "Custom power button"; description: "Exclusively capture Mirai's ACPI power button so accidental presses do not reach logind."; icon: "power_settings_new"; inputType: SettingMeta.Switch }
 
-    property string singleAction: "volume-up"
-    SettingMeta on singleAction { label: "Single press"; description: "Default: raise volume by one tap step."; icon: "looks_one"; inputType: SettingMeta.SplitButton; options: root.actions }
+    property string singleAction: "volume-down"
+    SettingMeta on singleAction { label: "Single press"; description: "Default: lower volume by one tap step."; icon: "looks_one"; inputType: SettingMeta.SplitButton; options: root.actions }
 
-    property string doubleAction: "volume-down"
-    SettingMeta on doubleAction { label: "Double press"; description: "Default: lower volume by one tap step."; icon: "looks_two"; inputType: SettingMeta.SplitButton; options: root.actions }
+    property string doubleAction: "volume-up"
+    SettingMeta on doubleAction { label: "Double press"; description: "Default: raise volume by one tap step."; icon: "looks_two"; inputType: SettingMeta.SplitButton; options: root.actions }
 
     property int doubleMilliseconds: 350
     SettingMeta on doubleMilliseconds { label: "Double-click window"; description: "Maximum delay between two ACPI button events."; icon: "speed"; inputType: SettingMeta.SpinBox; min: 180; max: 700; step: 10 }

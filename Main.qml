@@ -16,8 +16,8 @@ Item {
     function daemonArgs(): var {
         return [
             "python3", helper,
-            "--single", String(settings?.singleAction ?? "volume-up"),
-            "--double", String(settings?.doubleAction ?? "volume-down"),
+            "--single", String(settings?.singleAction ?? "volume-down"),
+            "--double", String(settings?.doubleAction ?? "volume-up"),
             "--double-ms", String(settings?.doubleMilliseconds ?? 350),
             "--volume-step", String(settings?.volumeStepPercent ?? 5),
             "--brightness-step", String(settings?.brightnessStepPercent ?? 5)

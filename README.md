@@ -4,10 +4,10 @@ A configurable Caelestia plugin for Mirai-style convertible laptops that turns t
 
 ## Defaults
 
-- single press: volume up
-- double press: volume down
+- single press: volume down
+- double press: volume up
 
-The defaults can be changed in Nexus → Plugins. Every gesture is configurable. Available mappings include disabled, volume up/down, mute, brightness up/down, media play/pause/next/previous, lock, and display off. The first hold and click-then-hold mappings are separate. Repeat start delay, repeat interval, tap step sizes, held step sizes, double-click timing, and the six-second safety action are configurable.
+The defaults can be changed in Nexus → Plugins. Available mappings include disabled, volume up/down, mute, brightness up/down, media play/pause/next/previous, lock, and display off. Double-click timing and tap step sizes are configurable.
 
 ## How accidental suspend is prevented
 
