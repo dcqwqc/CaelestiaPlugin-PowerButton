@@ -22,10 +22,7 @@ Item {
             "--hold-ms", String(settings?.holdMilliseconds ?? 6000),
             "--double-ms", String(settings?.doubleMilliseconds ?? 350),
             "--volume-step", String(settings?.volumeStepPercent ?? 5),
-            "--brightness-step", String(settings?.brightnessStepPercent ?? 5),
-            "--single-command", String(settings?.singleCustomCommand ?? ""),
-            "--double-command", String(settings?.doubleCustomCommand ?? ""),
-            "--hold-command", String(settings?.holdCustomCommand ?? "")
+            "--brightness-step", String(settings?.brightnessStepPercent ?? 5)
         ];
     }
 
