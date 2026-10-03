@@ -26,3 +26,8 @@ def test_hold_fires_once_and_release_is_clean():
 
 def test_late_second_press_becomes_new_sequence():
     assert engine([('down',0),('up',.05),('down',.50),('up',.55),('tick',1)])==['single','single']
+
+if __name__=='__main__':
+    tests=[globals()[n] for n in sorted(globals()) if n.startswith('test_')]
+    for test in tests:
+        test(); print('PASS',test.__name__)
