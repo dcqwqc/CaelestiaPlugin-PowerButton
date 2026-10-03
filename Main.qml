@@ -18,11 +18,17 @@ Item {
             "python3", helper,
             "--single", String(settings?.singleAction ?? "volume-up"),
             "--double", String(settings?.doubleAction ?? "volume-down"),
-            "--hold", String(settings?.holdAction ?? "display-off"),
-            "--hold-ms", String(settings?.holdMilliseconds ?? 6000),
+            "--hold", String(settings?.holdAction ?? "volume-up"),
+            "--second-hold", String(settings?.secondHoldAction ?? "volume-down"),
+            "--long", String(settings?.longAction ?? "display-off"),
+            "--long-ms", String(settings?.longMilliseconds ?? 6000),
             "--double-ms", String(settings?.doubleMilliseconds ?? 350),
+            "--repeat-delay-ms", String(settings?.repeatDelayMilliseconds ?? 280),
+            "--repeat-ms", String(settings?.repeatMilliseconds ?? 90),
             "--volume-step", String(settings?.volumeStepPercent ?? 5),
-            "--brightness-step", String(settings?.brightnessStepPercent ?? 5)
+            "--repeat-volume-step", String(settings?.repeatVolumeStepPercent ?? 1),
+            "--brightness-step", String(settings?.brightnessStepPercent ?? 5),
+            "--repeat-brightness-step", String(settings?.repeatBrightnessStepPercent ?? 1)
         ];
     }
 
