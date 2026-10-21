@@ -4,13 +4,12 @@
   "author": "dcqwqc",
   "homepage": "https://github.com/dcqwqc/CaelestiaPlugin-PowerButton",
   "icon": "power_settings_new",
-  "description": "Safely repurpose Mirai’s ACPI power button with reliable configurable single/double press actions while preventing accidental suspend; hold gestures are intentionally disabled because the hardware exposes no press duration to Linux.",
+  "description": "Safely repurpose Mirai\u2019s ACPI power button with reliable configurable single/double press actions while preventing accidental suspend; hold gestures are intentionally disabled because the hardware exposes no press duration to Linux.",
   "entryPoints": [
     {
       "type": "custom",
       "source": "Main.qml"
     }
   ],
-  "settings": "Settings.qml",
-  "requires": ">=2.1.0"
+  "settings": "Settings.qml"
 }
